@@ -138,7 +138,7 @@ Contributions welcome! To add or improve a skill:
 
 ## Meet Your Artisans
 
-[LUBUS](http://lubus.in) is a web design agency based in Mumbai.
+[LUBUS](https://lubus.in/?utm_source=github&utm_medium=open-source&utm_campaign=agent-skills) is a web design agency based in Mumbai.
 
 <a href="https://cal.com/lubus">
 <img src="https://raw.githubusercontent.com/lubusIN/.github/refs/heads/main/profile/banner.png" />
