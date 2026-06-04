@@ -62,10 +62,10 @@ These Agent Skills solve this by giving AI assistants deep framework knowledge i
 
 ```bash
 # Install all Frappe skills
-npx skills add lubusIN/frappe-skills --skills=frappe-*
+npx skills add lubusIN/frappe-skills
 
 # Install all skills from all frameworks globally
-npx skills add lubusIN/frappe-skills --skills=frappe-* -g
+npx skills add lubusIN/frappe-skills -g
 
 # Or install specific Frappe skills
 npx skills add lubusIN/frappe-skills --skills=frappe-doctype-development,frappe-api-development
@@ -76,17 +76,17 @@ npx skills add lubusIN/frappe-skills --skills=frappe-doctype-development,frappe-
 ```bash
 # Clone the parent repo
 git clone https://github.com/lubusIN/frappe-skills.git
-cd agent-skills
+cd frappe-skills
 
 # Copy Frappe skills to your AI assistant's skills directory
 # Claude Code (global)
-cp -r skills/frappe/frappe-* ~/.claude/skills/
+cp -r frappe-* ~/.claude/skills/
 
 # Cursor (global)
-cp -r skills/frappe/frappe-* ~/.cursor/skills/
+cp -r frappe-* ~/.cursor/skills/
 
 # Or into your project
-cp -r skills/frappe/frappe-* /path/to/your-project/.claude/skills/
+cp -r frappe-* /path/to/your-project/.claude/skills/
 ```
 
 ## How It Works
@@ -116,8 +116,6 @@ Each SKILL.md follows a standard format:
 
 ## Compatibility
 
-- Frappe Framework v13+
-- Works with ERPNext, HRMS, and custom apps
 - Compatible with any AI assistant that supports Agent Skills
 
 ## Contributing
