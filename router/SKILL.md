@@ -1,5 +1,5 @@
 ---
-name: frappe-router
+name: router
 description: Route to the appropriate Frappe skill based on task type. Use as the entry point when working on Frappe projects to determine which specialized skill to apply.
 ---
 
@@ -18,23 +18,23 @@ Route to the appropriate Frappe skill based on your task.
 
 | Task | Skill |
 |------|-------|
-| Understand project structure, versions, apps | → `frappe-project-triage` |
-| Scaffold new app, hooks, architecture, background jobs | → `frappe-app-development` |
-| Create/modify DocTypes, fields, controllers | → `frappe-doctype-development` |
-| Build REST/RPC APIs, webhooks, integrations | → `frappe-api-development` |
-| Customize Desk UI, form scripts, list views, JS API | → `frappe-desk-customization` |
-| Build Vue 3 frontends with Frappe UI, portals | → `frappe-frontend-development` |
-| UI/UX patterns from CRM/Helpdesk/HRMS | → `frappe-ui-patterns` |
-| Create print formats, email templates, Jinja, PDFs | → `frappe-printing-templates` |
-| Build reports (Builder, Query, Script) | → `frappe-reports` |
-| Create public web forms for data collection | → `frappe-web-forms` |
-| Write or run tests | → `frappe-testing` |
+| Understand project structure, versions, apps | → `project-triage` |
+| Scaffold new app, hooks, architecture, background jobs | → `app-development` |
+| Create/modify DocTypes, fields, controllers | → `doctype-development` |
+| Build REST/RPC APIs, webhooks, integrations | → `api-development` |
+| Customize Desk UI, form scripts, list views, JS API | → `desk-customization` |
+| Build Vue 3 frontends with Frappe UI, portals | → `frontend-development` |
+| UI/UX patterns from CRM/Helpdesk/HRMS | → `ui-patterns` |
+| Create print formats, email templates, Jinja, PDFs | → `printing-templates` |
+| Build reports (Builder, Query, Script) | → `reports` |
+| Create public web forms for data collection | → `web-forms` |
+| Write or run tests | → `testing` |
 | Set up dev environment with Docker/FM | → `frappe-manager` |
-| Build CRM/Helpdesk/enterprise systems | → `frappe-enterprise-patterns` |
+| Build CRM/Helpdesk/enterprise systems | → `enterprise-patterns` |
 
 ### 1) Run triage first (recommended)
 
-Before deep work, run `frappe-project-triage` to understand:
+Before deep work, run `project-triage` to understand:
 - Project type (bench/FM/standalone)
 - Frappe version
 - Installed apps
@@ -43,53 +43,53 @@ Before deep work, run `frappe-project-triage` to understand:
 ### 2) Combine skills as needed
 
 Complex tasks may require multiple skills:
-- New app = `frappe-app-development` + `frappe-doctype-development` + `frappe-api-development` + `frappe-testing`
-- Feature with UI = `frappe-doctype-development` + `frappe-desk-customization` + `frappe-api-development`
-- Custom frontend = `frappe-frontend-development` + `frappe-api-development`
-- Document workflow = `frappe-doctype-development` + `frappe-printing-templates` + `frappe-reports`
-- Enterprise app = `frappe-enterprise-patterns` + `frappe-doctype-development`
+- New app = `app-development` + `doctype-development` + `api-development` + `testing`
+- Feature with UI = `doctype-development` + `desk-customization` + `api-development`
+- Custom frontend = `frontend-development` + `api-development`
+- Document workflow = `doctype-development` + `printing-templates` + `reports`
+- Enterprise app = `enterprise-patterns` + `doctype-development`
 
 ## Quick decision tree
 
 ```
 Is this about understanding the project?
-  → frappe-project-triage
+  → project-triage
 
 Is this about creating a new app or app architecture?
-  → frappe-app-development
+  → app-development
 
 Is this about data models or DocTypes?
-  → frappe-doctype-development
+  → doctype-development
 
 Is this about APIs or external access?
-  → frappe-api-development
+  → api-development
 
 Is this about Desk UI, form scripts, or client-side JS?
-  → frappe-desk-customization
+  → desk-customization
 
 Is this about a Vue 3 frontend or portal?
-  → frappe-frontend-development
+  → frontend-development
 
 Is this about UI/UX patterns or app design?
-  → frappe-ui-patterns
+  → ui-patterns
 
 Is this about print formats, PDFs, or Jinja templates?
-  → frappe-printing-templates
+  → printing-templates
 
 Is this about reports or data analysis views?
-  → frappe-reports
+  → reports
 
 Is this about public web forms?
-  → frappe-web-forms
+  → web-forms
 
 Is this about testing?
-  → frappe-testing
+  → testing
 
 Is this about local dev environment?
   → frappe-manager
 
 Is this a complex enterprise system?
-  → frappe-enterprise-patterns
+  → enterprise-patterns
 ```
 
 ## Guardrails
@@ -108,5 +108,5 @@ Is this a complex enterprise system?
 | Wrong skill for task | Incomplete implementation | Match task type to skill carefully |
 | Ignoring version differences | Deprecated/missing APIs | Check version compatibility in skill references |
 | Working on wrong site | Changes don't appear | Always specify `--site` flag |
-| Using vanilla JS/jQuery for frontends | Ecosystem mismatch | Use Frappe UI (Vue 3) via `frappe-frontend-development` |
-| Custom app shell for CRUD apps | Inconsistent UX | Follow CRM/Helpdesk patterns via `frappe-enterprise-patterns` |
+| Using vanilla JS/jQuery for frontends | Ecosystem mismatch | Use Frappe UI (Vue 3) via `frontend-development` |
+| Custom app shell for CRUD apps | Inconsistent UX | Follow CRM/Helpdesk patterns via `enterprise-patterns` |

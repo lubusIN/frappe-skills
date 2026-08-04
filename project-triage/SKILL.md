@@ -1,5 +1,5 @@
 ---
-name: frappe-project-triage
+name: project-triage
 description: Detect Frappe project type, installed apps, version, and tooling. Use as the first step when working on any Frappe/ERPNext codebase to understand the project structure before making changes.
 ---
 
@@ -105,10 +105,10 @@ Site Name: <site>
 ```
 
 Use this output to route to the appropriate skill:
-- DocType work → `frappe-doctype-development`
-- API work → `frappe-api-development`
-- Testing → `frappe-testing`
-- Enterprise patterns → `frappe-enterprise-patterns`
+- DocType work → `doctype-development`
+- API work → `api-development`
+- Testing → `testing`
+- Enterprise patterns → `enterprise-patterns`
 
 ## Guardrails
 

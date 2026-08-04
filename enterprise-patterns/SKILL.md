@@ -1,5 +1,5 @@
 ---
-name: frappe-enterprise-patterns
+name: enterprise-patterns
 description: Production-grade architectural patterns for building enterprise Frappe apps like CRM, Helpdesk, and HRMS. Use when designing complex multi-entity systems with workflows, SLAs, and integrations.
 ---
 
@@ -204,7 +204,7 @@ frappe.enqueue(
 
 - For complex permission patterns, see [references/advanced-permissions.md](references/advanced-permissions.md)
 - For queue optimization, see [references/queue-patterns.md](references/queue-patterns.md)
-- For UI/UX patterns → `frappe-ui-patterns`
+- For UI/UX patterns → `ui-patterns`
 
 ## References
 
@@ -214,7 +214,7 @@ frappe.enqueue(
 
 ## Guardrails
 
-- **Follow CRM/Helpdesk UI patterns**: For CRUD apps, follow `frappe-ui-patterns` skill which documents app shell, navigation, list views, and form patterns from official Frappe apps. This includes sidebar layouts, quick filters, Kanban views, and detail panels.
+- **Follow CRM/Helpdesk UI patterns**: For CRUD apps, follow `ui-patterns` skill which documents app shell, navigation, list views, and form patterns from official Frappe apps. This includes sidebar layouts, quick filters, Kanban views, and detail panels.
 - **Use Frappe UI for frontends**: All custom enterprise frontends must use Frappe UI (Vue 3 + TailwindCSS) — never vanilla JS or jQuery
 - **Design workflows carefully**: Map all states and transitions before implementation; consider rollback paths
 - **Handle edge cases**: Plan for cancelled, on-hold, and exception states in workflows

@@ -1,5 +1,5 @@
 ---
-name: frappe-reports
+name: reports
 description: Create reports in Frappe including Report Builder, Query Reports (SQL), and Script Reports (Python + JS). Use when building data analysis views, dashboards, or custom reporting features.
 ---
 
@@ -282,9 +282,9 @@ Reports are auto-discovered if they follow the standard directory structure. No 
 
 ## Escalation
 
-- For DocType schema → `frappe-doctype-development`
-- For API endpoints (report data via API) → `frappe-api-development`
-- For Desk UI customization → `frappe-desk-customization`
+- For DocType schema → `doctype-development`
+- For API endpoints (report data via API) → `api-development`
+- For Desk UI customization → `desk-customization`
 
 ## References
 

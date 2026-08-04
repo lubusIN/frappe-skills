@@ -25,36 +25,36 @@ These Agent Skills solve this by giving AI assistants deep framework knowledge i
 #### Core Skills
 | Skill | Description |
 |-------|-------------|
-| `frappe-router` | Entry point-routes to appropriate skill based on task |
-| `frappe-project-triage` | Detect project type, installed apps, version, and tooling |
+| `router` | Entry point-routes to appropriate skill based on task |
+| `project-triage` | Detect project type, installed apps, version, and tooling |
 
 #### Development Skills
 | Skill | Description |
 |-------|-------------|
-| `frappe-app-development` | Scaffold and architect custom Frappe apps with hooks, background jobs, and service layers |
-| `frappe-doctype-development` | Create and modify DocTypes, controllers, child tables |
-| `frappe-api-development` | Build REST and RPC APIs with proper auth and permissions |
+| `app-development` | Scaffold and architect custom Frappe apps with hooks, background jobs, and service layers |
+| `doctype-development` | Create and modify DocTypes, controllers, child tables |
+| `api-development` | Build REST and RPC APIs with proper auth and permissions |
 
 #### UI & Frontend Skills
 | Skill | Description |
 |-------|-------------|
-| `frappe-desk-customization` | Customize Frappe Desk UI with form scripts, list views, and dialogs |
-| `frappe-frontend-development` | Build modern Vue 3 frontend apps using Frappe UI |
-| `frappe-ui-patterns` | UI/UX patterns derived from official Frappe apps (CRM, Helpdesk, HRMS) |
-| `frappe-printing-templates` | Build print formats, email templates, and Jinja-based rendering |
-| `frappe-reports` | Create Report Builder, Query Reports (SQL), and Script Reports (Python + JS) |
-| `frappe-web-forms` | Build public-facing web forms for data collection |
+| `desk-customization` | Customize Frappe Desk UI with form scripts, list views, and dialogs |
+| `frontend-development` | Build modern Vue 3 frontend apps using Frappe UI |
+| `ui-patterns` | UI/UX patterns derived from official Frappe apps (CRM, Helpdesk, HRMS) |
+| `printing-templates` | Build print formats, email templates, and Jinja-based rendering |
+| `reports` | Create Report Builder, Query Reports (SQL), and Script Reports (Python + JS) |
+| `web-forms` | Build public-facing web forms for data collection |
 
 #### Testing & Infrastructure
 | Skill | Description |
 |-------|-------------|
-| `frappe-testing` | Write and run unit, integration, and UI tests |
+| `testing` | Write and run unit, integration, and UI tests |
 | `frappe-manager` | Docker-based dev environments with Frappe Manager |
 
 #### Patterns & Best Practices
 | Skill | Description |
 |-------|-------------|
-| `frappe-enterprise-patterns` | Production patterns for CRM/Helpdesk-style apps |
+| `enterprise-patterns` | Production patterns for CRM/Helpdesk-style apps |
 
 ## Installation
 
@@ -68,7 +68,7 @@ npx skills add lubusIN/frappe-skills
 npx skills add lubusIN/frappe-skills -g
 
 # Or install specific Frappe skills
-npx skills add lubusIN/frappe-skills --skills=frappe-doctype-development,frappe-api-development
+npx skills add lubusIN/frappe-skills --skills=doctype-development,api-development
 ```
 
 ### Manual Installation
@@ -80,13 +80,13 @@ cd frappe-skills
 
 # Copy Frappe skills to your AI assistant's skills directory
 # Claude Code (global)
-cp -r frappe-* ~/.claude/skills/
+cp -r doctype-development api-development ~/.claude/skills/
 
 # Cursor (global)
-cp -r frappe-* ~/.cursor/skills/
+cp -r doctype-development api-development ~/.cursor/skills/
 
 # Or into your project
-cp -r frappe-* /path/to/your-project/.claude/skills/
+cp -r doctype-development api-development /path/to/your-project/.claude/skills/
 ```
 
 ## How It Works
@@ -94,7 +94,7 @@ cp -r frappe-* /path/to/your-project/.claude/skills/
 Each skill contains:
 
 ```
-frappe-doctype-development/
+doctype-development/
 ├── SKILL.md              # Main instructions (when to use, procedure, verification)
 └── references/           # Deep-dive docs on specific topics
     ├── doctypes.md

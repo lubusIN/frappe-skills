@@ -1,5 +1,5 @@
 ---
-name: frappe-app-development
+name: app-development
 description: Scaffold and architect custom Frappe apps including app structure, hooks, background jobs, service layers, and production hardening. Use when creating new apps, setting up app architecture, or implementing cross-cutting patterns like caching, logging, and error handling.
 ---
 
@@ -275,15 +275,15 @@ else:
 
 ## Escalation
 
-- For DocType creation details → `frappe-doctype-development`
-- For API endpoint patterns → `frappe-api-development`
-- For Desk UI customization → `frappe-desk-customization`
-- For Frappe UI frontends → `frappe-frontend-development`
-- For print formats and Jinja → `frappe-printing-templates`
-- For reports → `frappe-reports`
-- For web forms → `frappe-web-forms`
-- For testing → `frappe-testing`
-- For enterprise architecture → `frappe-enterprise-patterns`
+- For DocType creation details → `doctype-development`
+- For API endpoint patterns → `api-development`
+- For Desk UI customization → `desk-customization`
+- For Frappe UI frontends → `frontend-development`
+- For print formats and Jinja → `printing-templates`
+- For reports → `reports`
+- For web forms → `web-forms`
+- For testing → `testing`
+- For enterprise architecture → `enterprise-patterns`
 - For Docker/FM environments → `frappe-manager`
 
 ## References
@@ -294,13 +294,13 @@ else:
 
 ### Cross-references (owned by specialized skills)
 
-- hooks.py and extension points → `frappe-doctype-development` ([hooks-extensions.md](../frappe-doctype-development/references/hooks-extensions.md))
-- Python API reference → `frappe-api-development` ([python-api.md](../frappe-api-development/references/python-api.md))
+- hooks.py and extension points → `doctype-development` ([hooks-extensions.md](../doctype-development/references/hooks-extensions.md))
+- Python API reference → `api-development` ([python-api.md](../api-development/references/python-api.md))
 
 ## Guardrails
 
-- **Use Frappe UI for custom frontends**: Never use vanilla JS, jQuery, or custom frameworks. Frappe UI (Vue 3 + TailwindCSS) is the ecosystem standard. See `frappe-frontend-development` for setup.
-- **Follow CRM/Helpdesk patterns for CRUD apps**: Follow `frappe-ui-patterns` skill for app shell, navigation, list views, and form layouts derived from official Frappe apps.
+- **Use Frappe UI for custom frontends**: Never use vanilla JS, jQuery, or custom frameworks. Frappe UI (Vue 3 + TailwindCSS) is the ecosystem standard. See `frontend-development` for setup.
+- **Follow CRM/Helpdesk patterns for CRUD apps**: Follow `ui-patterns` skill for app shell, navigation, list views, and form layouts derived from official Frappe apps.
 - **Follow naming conventions**: App name must be lowercase with underscores, valid Python identifier
 - **Use hooks.py for integrations**: Never monkey-patch; use doc_events, scheduler_events, boot_session hooks
 - **Keep hooks.py clean**: Only configuration, no logic; import from modules
@@ -317,5 +317,5 @@ else:
 | Editing hooks.py without restart | Changes not picked up | Run `bench restart` after hooks.py changes |
 | Missing `__init__.py` files | Module import errors | Ensure every directory has `__init__.py` |
 | Logic in hooks.py | Hard to test, import errors | Move logic to separate modules, import in hooks |
-| Building frontend with vanilla JS/jQuery | Inconsistent with ecosystem | Use Frappe UI (Vue 3); see `frappe-frontend-development` |
+| Building frontend with vanilla JS/jQuery | Inconsistent with ecosystem | Use Frappe UI (Vue 3); see `frontend-development` |
 | Custom app shell for CRUD apps | Inconsistent UX | Follow CRM/Helpdesk patterns for navigation and layouts |

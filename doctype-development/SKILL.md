@@ -1,5 +1,5 @@
 ---
-name: frappe-doctype-development
+name: doctype-development
 description: Create and modify Frappe DocTypes including schema design, controllers, child tables, and customization. Use when building data models, adding fields, or implementing document lifecycle logic.
 ---
 

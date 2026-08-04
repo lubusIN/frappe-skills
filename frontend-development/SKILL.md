@@ -1,5 +1,5 @@
 ---
-name: frappe-frontend-development
+name: frontend-development
 description: Build modern Vue 3 frontend apps using Frappe UI with components, data fetching, and portal pages. Use when creating custom frontends, SPAs, or portal interfaces for Frappe applications.
 ---
 
@@ -30,7 +30,7 @@ Build modern frontend applications using Frappe UI (Vue 3 + TailwindCSS) and por
 |----------|-------------|-------|
 | Frappe UI SPA | Custom app frontend | Vue 3, TailwindCSS, Vite |
 | Portal pages | Simple public pages | Jinja + HTML, minimal JS |
-| Desk extensions | Admin UI enhancements | Form/List scripts (see `frappe-desk-customization`) |
+| Desk extensions | Admin UI enhancements | Form/List scripts (see `desk-customization`) |
 
 ### 1) Scaffold Frappe UI frontend
 
@@ -323,10 +323,10 @@ def get_context(context):
 
 ## Escalation
 
-- For Desk UI scripting → `frappe-desk-customization`
-- For API endpoint implementation → `frappe-api-development`
-- For app architecture → `frappe-app-development`
-- For UI/UX patterns from official apps → `frappe-ui-patterns`
+- For Desk UI scripting → `desk-customization`
+- For API endpoint implementation → `api-development`
+- For app architecture → `app-development`
+- For UI/UX patterns from official apps → `ui-patterns`
 
 ## References
 
@@ -337,7 +337,7 @@ def get_context(context):
 
 - **ALWAYS use Frappe UI for custom frontends**: Never use vanilla JS, jQuery, or custom frameworks for app frontends — Frappe UI (Vue 3 + TailwindCSS) is the standard. This ensures consistency with CRM, Helpdesk, and other official Frappe apps.
 - **Use FrappeUI components**: Prefer `<Button>`, `<Input>`, `<FormControl>` over custom HTML for consistency
-- **Follow CRM/Helpdesk app shell patterns**: For CRUD apps, follow `frappe-ui-patterns` skill which documents sidebar navigation, list views, form layouts, and routing patterns from official Frappe apps
+- **Follow CRM/Helpdesk app shell patterns**: For CRUD apps, follow `ui-patterns` skill which documents sidebar navigation, list views, form layouts, and routing patterns from official Frappe apps
 - **Handle loading states**: Always show loading indicators during API calls; use `resource.loading`
 - **Validate API responses**: Check for errors before accessing data; handle `exc` responses
 - **Configure proxy correctly**: Dev server must proxy API calls to Frappe backend

@@ -1,5 +1,5 @@
 ---
-name: frappe-web-forms
+name: web-forms
 description: Build public-facing web forms for data collection without Desk access. Use when creating customer submission forms, feedback forms, or self-service portals with Frappe Web Forms.
 ---
 
@@ -162,9 +162,9 @@ Web forms use the website theme by default. For custom styling:
 
 ## Escalation
 
-- For DocType schema → `frappe-doctype-development`
-- For Frappe UI portal apps → `frappe-frontend-development`
-- For API endpoint access → `frappe-api-development`
+- For DocType schema → `doctype-development`
+- For Frappe UI portal apps → `frontend-development`
+- For API endpoint access → `api-development`
 
 ## References
 

@@ -1,5 +1,5 @@
 ---
-name: frappe-desk-customization
+name: desk-customization
 description: Customize Frappe Desk UI with form scripts, list view scripts, report scripts, dialogs, and client-side JavaScript APIs. Use when building interactive Desk experiences, adding custom buttons, or scripting form behavior.
 ---
 
@@ -288,9 +288,9 @@ let route = frappe.get_route();
 
 ## Escalation
 
-- For server-side controller logic → `frappe-doctype-development`
-- For RPC endpoint implementation → `frappe-api-development`
-- For Frappe UI (Vue 3) frontends → `frappe-frontend-development`
+- For server-side controller logic → `doctype-development`
+- For RPC endpoint implementation → `api-development`
+- For Frappe UI (Vue 3) frontends → `frontend-development`
 
 ## References
 

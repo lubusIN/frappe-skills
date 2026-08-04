@@ -1,5 +1,5 @@
 ---
-name: frappe-printing-templates
+name: printing-templates
 description: Build print formats, email templates, and web page templates using Jinja. Generate PDFs and configure letter heads. Use when creating custom print layouts, email templates, or any Jinja-based rendering in Frappe.
 ---
 
@@ -255,8 +255,8 @@ frappe.sendmail(
 
 ## Escalation
 
-- For app-level hooks and structure → `frappe-app-development`
-- For DocType schema questions → `frappe-doctype-development`
+- For app-level hooks and structure → `app-development`
+- For DocType schema questions → `doctype-development`
 
 ## References
 

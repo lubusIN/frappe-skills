@@ -1,5 +1,5 @@
 ---
-name: frappe-testing
+name: testing
 description: Write and run tests for Frappe apps including unit tests, integration tests, and UI tests. Use when adding test coverage, debugging test failures, or setting up CI for Frappe projects.
 ---
 

@@ -1,5 +1,5 @@
 ---
-name: frappe-ui-patterns
+name: ui-patterns
 description: UI/UX patterns and guidelines derived from official Frappe apps (CRM, Helpdesk, HRMS). Use when designing interfaces for custom Frappe applications to ensure consistency with the ecosystem.
 ---
 
@@ -484,9 +484,9 @@ Use these Frappe UI components consistently:
 
 ## Escalation
 
-- For component implementation → `frappe-frontend-development`
-- For backend API integration → `frappe-api-development`
-- For enterprise workflows → `frappe-enterprise-patterns`
+- For component implementation → `frontend-development`
+- For backend API integration → `api-development`
+- For enterprise workflows → `enterprise-patterns`
 
 ## References
 

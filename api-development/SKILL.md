@@ -1,5 +1,5 @@
 ---
-name: frappe-api-development
+name: api-development
 description: Build REST and RPC APIs in Frappe including whitelisted methods, authentication, and permission handling. Use when creating custom endpoints, integrating with external systems, or exposing business logic via API.
 ---
 
