@@ -55,6 +55,7 @@ These Agent Skills solve this by giving AI assistants deep framework knowledge i
 | Skill | Description |
 |-------|-------------|
 | `enterprise-patterns` | Production patterns for CRM/Helpdesk-style apps |
+| `code-review` | Code review checklist and automated checks for Frappe apps |
 
 ## Installation
 
