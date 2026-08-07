@@ -93,22 +93,13 @@ What it covers:
 
 ## Agent Behaviour
 
-Never automatically run every stage. Instead, follow this sequence:
+Follow these guidelines when executing a review:
 
-1. **Classify the change** — what kind of code is being modified? (backend logic,
-   frontend component, database schema, configuration, etc.)
-2. **Determine review depth** — based on the scope and risk of the change
-3. **Offer the user a choice** before proceeding:
-
-   > Choose review depth:
-   > - **Audit** — quick hygiene scan
-   > - **Code review** — deep structural review
-   > - **Strict validation** — automated tooling and test execution
-
-4. **Execute the selected stage(s)**
-5. **Collect findings** — group by severity (critical, warning, suggestion)
-6. **Propose improvements** — concrete, actionable recommendations
-7. **Identify regressions** — flag anything that could break existing behaviour
+1. **Target Working Tree:** Always restrict your review to the user's staged/unstaged git changes unless instructed otherwise. Do not scan the entire codebase.
+2. **Default to Static Analysis:** For generic requests like "audit", "review", or "check", perform **Stage 1** or **Stage 2** on the modified files.
+3. **Avoid Stage 3:** Never run automated tests or tools (Stage 3) unless explicitly requested (e.g., "run tests" or "strict validation").
+4. **Offer Options:** If a request is ambiguous, ask the user to choose their desired depth: Audit, Code Review, Strict Validation, or a **Full Review (All Stages)**.
+5. **Report:** Group findings by severity (critical, warning, suggestion) and propose concrete, actionable improvements.
 
 If the user asks for "a review" without specifying a stage, default to offering
 the choice. Do not assume the deepest level is always appropriate.

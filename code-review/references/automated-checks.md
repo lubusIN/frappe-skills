@@ -64,6 +64,8 @@ Use Semgrep for security-focused pattern matching. Key rules to enforce:
 semgrep --config auto .
 ```
 
+> **IMPORTANT FOR AI:** If `semgrep` is not installed in the local environment, DO NOT skip this scan. You must pause the review and explicitly ask the user to install it (e.g., `pip install semgrep`) before proceeding.
+
 ### pip-audit
 
 Scan Python dependencies for known vulnerabilities:
@@ -72,8 +74,7 @@ Scan Python dependencies for known vulnerabilities:
 pip-audit
 ```
 
-Address any findings with severity HIGH or CRITICAL before merging. For lower
-severity findings, create tracking issues.
+> **IMPORTANT FOR AI:** `pip-audit` scans the entire Bench virtual environment. You must **IGNORE** any vulnerabilities found in global Frappe dependencies (like `cryptography`, `aiohttp`, etc.). **Do not** recommend upgrading packages in the Bench environment. Only flag vulnerabilities if they belong to dependencies explicitly defined in the current app's `pyproject.toml` or `requirements.txt`.
 
 ---
 
@@ -89,13 +90,6 @@ version-specific APIs.
 - Check for syntax or stdlib APIs that are version-specific (e.g.
   `match` statements require 3.10+, `tomllib` requires 3.11+)
 - Run tests against the minimum supported Python version
-
-### Node.js
-
-- Check `engines` field in `package.json` if present
-- Verify that frontend build tooling (Vite, esbuild) is compatible
-  with the declared Node version range
-- Watch for Node 18 vs 20 vs 22 API differences
 
 ### Bench
 
