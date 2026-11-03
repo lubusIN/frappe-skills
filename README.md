@@ -148,6 +148,47 @@ Contributions welcome! To add or improve a skill:
 - Inspired by [WordPress Agent Skills](https://github.com/WordPress/agent-skills)
 - Built on the [Anthropic Agent Skills Specification](https://agentskills.io/)
 
+## More Frappe Tools
+
+Explore more open-source tools we're building for the Frappe ecosystem.
+
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <a href="https://github.com/lubusIN/frappe-local">
+        <img src="https://raw.githubusercontent.com/lubusIN/frappe-local/main/.github/assets/logo.svg" alt="Frappe Local" height="60">
+      </a>
+      <br>
+      Manage Frappe benches and sites visually.
+    </td>
+    <td width="50%" valign="top">
+      <a href="https://github.com/lubusIN/frappe-playground">
+        <img src="https://raw.githubusercontent.com/lubusIN/frappe-playground/main/.github/logo.svg" alt="Frappe Playground" height="60">
+      </a>
+      <br>
+      Run Frappe entirely in your browser.
+    </td>
+  </tr>
+
+  <tr>
+    <td width="50%" valign="top">
+      <a href="https://github.com/lubusIN/frappe-vault">
+        <img src="https://raw.githubusercontent.com/lubusIN/frappe-vault/main/.github/assets/logo.svg" alt="Frappe Vault" height="60">
+      </a>
+      <br>
+      Manage secrets and passwords with Frappe.
+    </td>
+    <td width="50%" valign="top">
+      <a href="https://github.com/lubusIN/wp-frappe-data-store">
+        <img src="https://raw.githubusercontent.com/lubusIN/wp-frappe-data-store/main/.github/assets/logo.svg" alt="WP Frappe Data Store" height="60">
+      </a>
+      <br>
+      React Data store for WordPress.
+    </td>
+  </tr>
+</table>
+
+[Explore all LUBUS projects →](https://github.com/lubusIN)
 
 ## Meet Your Artisans
 
