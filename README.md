@@ -1,5 +1,5 @@
 <p align="center">
-  <img width="250" src=".github/assets/logo.svg" alt="Frappe Agent Skills" />
+  <img height="50" src=".github/assets/logo.svg" alt="Frappe Skills" />
 </p>
 
 # Frappe Skills
